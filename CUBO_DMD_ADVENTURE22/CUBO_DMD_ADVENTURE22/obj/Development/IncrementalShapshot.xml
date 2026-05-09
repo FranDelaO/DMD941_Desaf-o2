@@ -26,7 +26,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>khjgO0bi3q8nXYims9ebkjb9S3E=5/8/2026 8:35:07 PM5/8/2026 5:21:33 PM</TimeStamp>
+        <TimeStamp>gI5utr7Xn52hsq0sYsMsi9EOvsc=5/8/2026 10:59:22 PM5/8/2026 5:21:33 PM</TimeStamp>
         <ID>
           <String>Adventure Works DW2022</String>
         </ID>
@@ -68,7 +68,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>WQvmlrZpElyEiNzoGJvb1Qgmkqg=5/8/2026 8:37:21 PM5/8/2026 5:30:34 PMzXMG85I4ZlAO2jz/+esr6GMyMPk=5/8/2026 5:30:34 PM5/8/2026 5:30:34 PM</TimeStamp>
+        <TimeStamp>U6WINaBmRknnHCjm3O4AJ0cYTkw=5/8/2026 10:29:47 PM5/8/2026 5:30:34 PMzXMG85I4ZlAO2jz/+esr6GMyMPk=5/8/2026 5:30:34 PM5/8/2026 5:30:34 PM</TimeStamp>
         <ID>
           <String>Adventure Works DW2022</String>
         </ID>
@@ -85,5 +85,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2026-05-09T02:37:52.863333Z</LastDeployed>
+  <LastDeployed>2026-05-09T04:59:25.266667Z</LastDeployed>
 </DeploymentSnapshot>

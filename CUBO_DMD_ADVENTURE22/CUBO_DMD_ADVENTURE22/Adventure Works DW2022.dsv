@@ -28,7 +28,7 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="38" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3122" scrolltop="4243" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="85" x="24051" y="26458" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="38" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3122" scrolltop="5476" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="85" x="23760" y="17145" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                   </font>
@@ -332,7 +332,7 @@
             <ShowRelationshipNames>False</ShowRelationshipNames>
             <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
             <DiagramViewPortLeft>-3122</DiagramViewPortLeft>
-            <DiagramViewPortTop>4243</DiagramViewPortTop>
+            <DiagramViewPortTop>5476</DiagramViewPortTop>
             <DiagramBoundingLeft>0</DiagramBoundingLeft>
             <DiagramBoundingTop>0</DiagramBoundingTop>
             <DiagramZoom>85</DiagramZoom>
@@ -635,14 +635,14 @@
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="Product_x0020_Category_x0020_Name" msdata:ReadOnly="true" msprop:Description="Asigna Nombre al Producto en español" msprop:design-time-name="e346aeed-d615-410e-a877-70c4946ba31c" msprop:IsLogical="True" msprop:DbColumnName="Product Category Name" msprop:ComputedColumnExpression="(SELECT SpanishProductCategoryName &#xD;&#xA;    FROM DimProductCategory pc &#xD;&#xA;    INNER JOIN DimProductSubcategory ps &#xD;&#xA;    ON pc.ProductCategoryKey = ps.ProductCategoryKey &#xD;&#xA;    WHERE ps.ProductSubcategoryKey = DimProduct.ProductSubcategoryKey)" minOccurs="0">
+                  <xs:element name="Product_x0020_Category_x0020_Name" msdata:ReadOnly="true" msprop:DbColumnName="Product Category Name" msprop:IsLogical="True" msprop:ComputedColumnExpression="ISNULL((SELECT SpanishProductCategoryName &#xD;&#xA;    FROM DimProductCategory pc &#xD;&#xA;    INNER JOIN DimProductSubcategory ps &#xD;&#xA;    ON pc.ProductCategoryKey = ps.ProductCategoryKey &#xD;&#xA;    WHERE ps.ProductSubcategoryKey = DimProduct.ProductSubcategoryKey),&#xD;&#xA; 'Sin Categoría')" msprop:design-time-name="e346aeed-d615-410e-a877-70c4946ba31c" msprop:Description="Asigna Nombre al Producto en español">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="50" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="Product_x0020_Subcategory_x0020_Name" msdata:ReadOnly="true" msprop:Description="Funciona para Asignarle nombre al producto en español (subcategoria)" msprop:design-time-name="92f62491-52d7-4dea-a062-0e6abdab4e4f" msprop:IsLogical="True" msprop:DbColumnName="Product Subcategory Name" msprop:ComputedColumnExpression="(SELECT SpanishProductSubcategoryName &#xD;&#xA;    FROM DimProductSubcategory &#xD;&#xA;    WHERE ProductSubcategoryKey = DimProduct.ProductSubcategoryKey)" minOccurs="0">
+                  <xs:element name="Product_x0020_Subcategory_x0020_Name" msdata:ReadOnly="true" msprop:DbColumnName="Product Subcategory Name" msprop:IsLogical="True" msprop:ComputedColumnExpression="(SELECT SpanishProductSubcategoryName &#xD;&#xA;    FROM DimProductSubcategory &#xD;&#xA;    WHERE ProductSubcategoryKey = DimProduct.ProductSubcategoryKey)" msprop:design-time-name="92f62491-52d7-4dea-a062-0e6abdab4e4f" msprop:Description="Funciona para Asignarle nombre al producto en español (subcategoria)" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="50" />
